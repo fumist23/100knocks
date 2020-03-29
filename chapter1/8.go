@@ -1,17 +1,25 @@
-package main 
+package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func main(){
-	a := "paraparaparadise"
-	b := "paragraph"
-	a2 := strings.Split(a, "")
-	fmt.Println(a2)
-	b2 := strings.Split(b, "")
-	fmt.Println(b2)
-	b3 := strings.Join(b2, "")
-	fmt.Println(b3)
+	sentence := "Never let your memories be greater than your dreams"
+	crypted := cipher(sentence)
+	fmt.Println(crypted)
+}
+
+func cipher(s string)string {
+	var x rune
+	var rn []rune
+	for _, v := range s{
+		if v >= 97 && v <= 122 {
+			x = 219 - v
+		}else {
+			x = v
+		}
+		rn = append(rn, x)
+	}
+	return string(rn)
 }
