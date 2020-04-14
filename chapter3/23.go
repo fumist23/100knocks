@@ -2,32 +2,33 @@ package main
 
 import (
 	"fmt"
-	"io"
 	"os"
-	"bufio"
 	"encoding/json"
+	"bufio"
+	"io"
 	"regexp"
 )
 
 type Article struct {
-	Text string `json:"text"`
-	Title string `json:"title"`
+	Text string `json:"text`
+	Title string `json:"title`
 }
 
 func main(){
-	filename := "jawiki-country.json"
-	file, err := os.Open(filename)
-	if err != nil {
+	articles := []Article{}
+
+	file, err := os.Open("jawiki-country.json")
+	if err != nil{
 		fmt.Printf("os.Open: %#v", err)
 		return
 	}
 	defer file.Close()
 
 	reader := bufio.NewReader(file)
-	articles := []Article{}
+
 	for {
 		b, err := reader.ReadBytes('\n')
-		if err == io.EOF {
+		if err == io.EOF{
 			break
 		}
 		a := Article{}
@@ -40,10 +41,14 @@ func main(){
 			txt = article.Text
 		}
 	}
-
 	reg, _ := regexp.Compile(`(?m)^=+.*=+`)
 	for _, v := range reg.FindAll([]byte(txt), -1){
-																  //ここからの処理がわかんないよおおおおおおおお
-																
+		for i := 0; i < len(v); i++{
+			if string(v[i]) != "="{
+				fmt.Println(string(v[i:len(v)-i]), i-1)
+				break
+			}
+		}
 	}
 }
+
