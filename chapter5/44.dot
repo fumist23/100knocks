@@ -1,0 +1,25 @@
+digraph G {
+	bgcolor="#343434";
+	掌の->上で[ color=white ];
+	上で->落ちついて[ color=white ];
+	少し->落ちついて[ color=white ];
+	落ちついて->見たのが[ color=white ];
+	書生の->顔を[ color=white ];
+	顔を->見たのが[ color=white ];
+	見たのが->人間という[ color=white ];
+	いわゆる->人間という[ color=white ];
+	人間という->ものの[ color=white ];
+	ものの->見始であろう[ color=white ];
+	いわゆる [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	ものの [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	上で [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	人間という [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	少し [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	掌の [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	書生の [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	落ちついて [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	見たのが [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	見始であろう [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+	顔を [ color=7, colorscheme=rdylgn11, fillcolor=11, fontcolor=6, fontname="Migu 1M", fontsize=16, shape=doublecircle, style="solid,filled" ];
+
+}
